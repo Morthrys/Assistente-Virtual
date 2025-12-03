@@ -1,0 +1,36 @@
+Entrada do Usuário
+  │
+  ▼
+[Pré-processamento / Correção Ortográfica] (feito)
+  │
+  ▼
+[Detector de Entidades Avançado (NER)]
+  │
+  ▼
+[Detector de Intenções (Comando vs. Informativa)]
+  │
+  ▼
+[Tratamento de Ambiguidade / Confirmação]
+  │
+  ▼
+***(Decisão e Roteamento de Fluxo)***
+  ├─ Se Intenção = Comando/Ação
+  │     ▼
+  │   [EntityHandler / Registry (Mapeamento)]
+  │     ▼
+  │   [Execução de Função Correspondente]
+  │
+  └─ Se Intenção = Informativa/Q&A
+        ▼
+      [Base de Conhecimento / Busca (RAG/KB)]
+        ▼
+      [Geração de Resposta (Informativa)]  <- Pula para a Geração
+  │
+  ▼
+[Gerenciamento de Diálogo (Atualiza Estado)]
+  │
+  ▼
+[Geração de Resposta (NLG) - Não Informativa]
+  │
+  ▼
+Saída para o Usuário

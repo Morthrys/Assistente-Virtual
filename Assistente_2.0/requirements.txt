@@ -1,0 +1,5 @@
+SpeechRecognition
+PySpellChecker
+spacy
+nltk
+pt_core_news_md

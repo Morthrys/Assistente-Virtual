@@ -1,0 +1,32 @@
+notion-client   # Integração com Notion
+transformers    # NLP / modelos
+scikit-learn    # Machine learning / vetorização
+spacy           # Processamento de linguagem natural
+nltk            # NLP básico (lematização stopwords)
+uvicorn         # Servidor ASGI
+fastapi         # API do assistente
+python-dotenv   # Variáveis de ambiente
+requests        # Chamadas HTTP
+pandas          # Manipulação de dados
+regex           # Expressões regulares otimizadas
+rapidfuzz       # Fuzzy matching rápido
+dateparser      # Biblioteca para expressões de tempo
+psutil          # Monitoramento de sistema
+pywin32         # API do windows
+pygetwindow     # Controle de janelas em macOS/Linux
+pywinauto       # UI do windows para alguns programas
+yt_dlp          # API Youtube
+python-vlc      # VLC player API
+prompt_toolkit  # Mecânismo para loop substituindo o input
+pvporcupine     # Detecta a palavra de ativação offline
+sounddevice     # 
+vosk            #
+numpy           #
+
+# Linux/macOS
+# wget https://alphacephei.com/vosk/models/vosk-model-small-pt-0.3.zip
+# unzip vosk-model-small-pt-0.3.zip -d model_pt
+
+# Windows (manual)
+# Baixe em: https://alphacephei.com/vosk/models
+# Extraia a pasta "model_pt" no mesmo diretório do seu Main_Call.py
