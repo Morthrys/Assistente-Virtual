@@ -11,7 +11,7 @@ class Konto:
     def iniciar(self):
         self.run = True
         return True
-    
+
     def input_listen(self):
         while self.run:
             try:
@@ -21,6 +21,9 @@ class Konto:
             except (KeyboardInterrupt, EOFError):
                 self.encerrar()
                 break
+
+    def process_text(self):
+        return
 
     def encerrar(self):
         if not self.run:
@@ -37,10 +40,9 @@ class Konto:
             except KeyboardInterrupt:
                 self.encerrar()
 
-
 if __name__ == "__main__":
     konto = Konto()
-    
+
     if not konto.iniciar():
         sys.exit(1)
 
